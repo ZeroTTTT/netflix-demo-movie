@@ -1,0 +1,122 @@
+.movie-card{
+    width: 220px;
+    height: 330px;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(43,41,41,0.9);
+    opacity: 0; 
+    transition: all 1s;
+    color: white;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    padding: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  */
+    
+    /* display: flex;
+flex-direction: column;
+justify-content: flex-end; */
+
+
+    /* width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(43, 41, 41, 0.9);
+    opacity: 0;
+    transition: all 1s;
+    color:white;
+    font-weight: bold;
+    overflow-wrap:break-word;
+    box-sizing: border-box;
+    padding: 10%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+       
+}
+
+
+
+.overlay h1 {
+    font-size: 1.3rem; 
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.movie-card:hover{
+    transform: scale(1.15) translateZ(20px);
+    z-index: 2;
+    
+}
+
+.movie-card-font{
+    font-size: 1rem;
+    margin-bottom: 5px; 
+}
+
+.adult-style{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.movie-card .badge-wrap{
+    display: flex;
+    gap:4px;
+    flex-wrap: wrap;
+    border-top:1px solid #eee;
+    padding-top:15px;
+    margin-top:10px;
+    
+}
+
+.movie-card .badge-wrap .badge{
+    /* display: flex;
+    gap:4px;
+    flex-wrap: wrap;
+    border-top:1px solid #eee;
+    padding-top:15px;
+    margin-top:10px; */
+    font-size: 0.7rem;
+    
+}
+.movie-card .MovieTag{
+    /* font-size: 0.5rem; */
+}
+
+
+/* 
+@media (min-width:465px) and (max-width:1024px) {
+    .movie-card .overlay h1{
+        font-size:4vw;
+    }
+    .movie-card .badge-wrap .badge{
+        font-size:1.6vw;
+    }
+}
+@media (min-width:1025px){
+    .movie-card .overlay h1{
+        font-size:1.8vw;
+    }
+    .movie-card .badge-wrap .badge{
+        font-size:0.8vw;
+    }
+} */

@@ -1,0 +1,92 @@
+.movie-credit-wrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem 16px;
+    position: relative;  
+}
+.credit-title{
+    font-size: 5.5vw;
+    font-weight: 600;
+    border-bottom: 1px solid #aaa;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+.credit-sub-title{
+    font-size:5vw;
+    margin-bottom: 1rem;
+}
+.credit-directing-list,
+.credit-character-list{
+    width: 100%;
+    list-style:none;
+    padding:0; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+.credit-directing-list{
+    margin-bottom:3rem;
+}
+.credit-directing-list li,
+.credit-character-list li{
+    width: 100%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.credit-directing-list li img,
+.credit-character-list li img{
+    width:100%;
+}
+.credit-name,
+.credit-content{
+    word-break: break-all;
+    line-height: 1.2;
+}
+.credit-name{
+    font-size:4.2vw;
+    font-weight: 600;
+    margin-bottom:0.5rem;
+}
+.credit-character{
+    font-size:3vw;
+    color:#999;
+}
+.credit-content{
+    padding:0.8rem;
+}
+@media (min-width:465px){
+    .credit-title{
+        font-size: calc(1.3rem + .6vw);
+    }
+    .credit-sub-title{
+        font-size: calc(1rem + .6vw);
+    }
+    .credit-name{
+        font-size:1rem;
+    }
+    .credit-character{
+        font-size:0.8rem;
+        color:#999;
+    }
+}
+@media (min-width:465px) and (max-width:1024px) {
+    .credit-directing-list,
+    .credit-character-list{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width:1025px){
+    .movie-credit-wrap{
+        max-width: 1000px;
+        padding: 2rem 0;
+    } 
+    .credit-directing-list,
+    .credit-character-list{
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .credit-content{
+        padding:1rem;
+    }
+}

@@ -1,0 +1,78 @@
+
+.detail-tag-wrap{
+    display: flex;
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    align-items: center;
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    column-gap: 2.4vw;
+    font-size: 3vw;
+}
+ .movie-popular,
+ .movie-vote{
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+ .movie-popular svg,
+ .movie-vote img{
+    width:3vw;
+}
+ .movie-popular svg{
+    filter: invert();
+}
+ .adult_all,
+ .adult_19{
+    color:#fff;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.8vw;
+}
+ .adult_all{
+    background:#198754;
+}
+ .adult_19{
+    background:#dc3545;
+}
+
+
+@media (min-width:465px) and (max-width:1024px) {
+    .detail-tag-wrap{
+        font-size: 1.8vw;
+        column-gap:1.5vw;
+    }
+     .adult_all,
+     .adult_19{
+        width: 2.8vw;
+        height: 2.8vw;
+        font-size: 1.2vw;
+    }
+     .movie-popular svg,
+     .movie-vote img{
+        width:1.8vw;
+    }
+
+
+}
+@media (min-width:1025px){
+    .detail-tag-wrap{
+        font-size: 0.9vw;
+        column-gap: 0.7vw;
+    }
+     .adult_all,
+     .adult_19{
+        width: 1.2vw;
+        height: 1.2vw;
+        font-size: 0.5vw;
+    }
+     .movie-popular svg,
+     .movie-vote img{
+        width:1vw;
+    }
+}

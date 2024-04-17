@@ -1,0 +1,31 @@
+.movieDetailBg{
+  width:100%;
+  height: 56vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  opacity: 0.6;
+}
+.movieDetailBg::before{
+  content: '';
+  background:linear-gradient(to top, black, transparent);
+  position:absolute;
+  left:0;
+  height: 56vh;
+  width:100%;
+}
+
+
+/* .spinner-area {
+    display: flex!important; 
+    justify-content: center!important; 
+    align-items: center!important; 
+    height: 100vh!important; 
+  }
+  .alert-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */

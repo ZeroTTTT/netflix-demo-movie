@@ -1,0 +1,168 @@
+.movie-detail-info{
+    width:100%;
+    overflow: hidden;  
+    margin: -20vh auto 0;
+    padding: 0 16px;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.poster-banner{
+    width:100%;
+    margin:0 auto;
+}
+.poster-banner img{
+    width:100%;  
+}
+.detail-cont-wrap{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.detail-bedge{
+    width:100%;
+    display: flex;
+    gap:0.5rem;
+    padding-bottom:0.5rem;
+    flex-wrap: wrap;
+}
+.detail-bedge .badge{
+    font-size:3vw;
+}
+.detail-titleWrap{
+    width:100%;
+}
+.detail-title{
+    font-size:8vw;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.detail-subtitle{
+    width: 100%;
+    font-size:4.5vw;
+    margin-bottom:1.5rem;
+}
+.detail-cont{
+    width:100%;
+    border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+    padding:1rem 0; 
+    margin:1rem 0;
+    font-size:4vw;
+}
+.detail-info-list{
+    list-style:none;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.detail-info-list li,
+.detail-info-list span{
+    font-size:4vw;
+}
+.detail-info-list span{
+    background-color: rgba(33, 37, 41);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding:0.2rem 0;
+    border-radius: 3rem;
+    margin-right:0.5rem;
+}
+
+@media (min-width:465px) and (max-width:1024px) {
+    .movie-detail-info{
+        display: flex;
+        flex-direction: row;
+    }
+    .poster-banner{
+        width:90%;
+    }
+    .detail-title{
+        font-size:2.4rem;
+    }
+    .detail-subtitle{
+        font-size:1.4rem;
+    }
+    .detail-bedge .badge{
+        font-size:0.7em;
+    }
+    .movie-detail-info .detail-tag-wrap{
+        font-size: 0.7rem;
+    }
+    .movie-detail-info .movie-popular svg,
+    .movie-detail-info .movie-vote img{
+        width:0.8rem;
+    }
+    .movie-detail-info .adult_all,
+    .movie-detail-info .adult_19{
+        width: 1rem;
+        height: 1rem;
+        font-size: 0.5rem;
+    }    
+    .detail-cont{
+        font-size:0.8rem;
+    }
+    .detail-info-list li,
+    .detail-info-list span{
+        font-size:0.8rem;
+    }
+    .detail-info-list span{
+        width:7.2rem;
+    }
+    .detail-watch-btn{
+        font-size:1rem;
+    }
+}
+@media (min-width:1025px){
+    .movie-detail-info{
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        padding:0;
+    } 
+    .poster-banner{
+        width:90%;
+    }
+    .detail-title{
+        font-size:3rem;
+    }
+    .detail-subtitle{
+        font-size:1.6rem;
+    }
+    .detail-bedge .badge{
+        font-size:0.8em;
+    }
+    .movie-detail-info .detail-tag-wrap{
+        font-size: 1rem;
+    }
+    .movie-detail-info .movie-popular svg,
+    .movie-detail-info .movie-vote img{
+        width:1rem;
+    }
+    .movie-detail-info .adult_all,
+    .movie-detail-info .adult_19{
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 0.6rem;
+    }
+    .detail-cont{
+        font-size:1rem;
+    }
+    .detail-info-list li,
+    .detail-info-list span{
+        font-size:1rem;
+    }
+    .detail-info-list span{
+        width:7.2rem;
+    }
+    .detail-watch-btn{
+        font-size:1.2rem;
+    }
+}

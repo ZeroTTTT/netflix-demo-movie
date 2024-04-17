@@ -1,0 +1,126 @@
+.pagination{
+    padding: 60px; /* 패딩을 추가하여 버튼 간격을 넓힘 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justifyContent: 'center */
+}
+
+.pagination li a {
+    color: #ffffffd2 !important;
+    background-color: black;
+    /* outline-color: black !important; */
+    border-color:  black !important;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .pagination li a:hover {
+    color: black !important; 
+    background-color: #ffffffd2; 
+  }
+
+  .pagination li.active a {
+    background-color: #ffffffd2; /* 선택된 페이지의 배경색 */
+    color: black !important;  /* 선택된 페이지의 텍스트 색상 */
+    border-radius: 10px;
+  }
+
+  .pagination li.disabled a {
+    /* color: black !important; 비활성화된 버튼의 글자색 */
+    color: #ffffffd2 !important;
+    background-color: black;
+  }
+
+
+html{
+    background-color: black;
+}
+
+.SortButton{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.SortButton Button{
+    padding:7px;
+    margin: 7px;
+}
+
+.MovieBox{
+    padding-top: 30px;
+}
+
+
+
+
+
+/* 버튼 스타일 */
+@media (max-width: 720px) {
+    .SortButton {
+      position: absolute;
+      top: 50;  /*이게 0이면*/
+      left: 0;
+      width: 100%;
+      z-index: 0; /*다른 요소 위에 표시되도록 낮은 값으로 설정*/
+      /* padding-top:100px; */   /*요소의 위쪽에 여백을 추가합니다.*/
+    }
+  
+    .SortButton button {
+      margin-bottom: 7px;
+    }
+
+    .MovieBox{
+        padding-top: 100px;
+        padding:330px;
+    }
+  }
+
+  .MovieGenreContainer{
+    padding-top: 30px;
+    margin-left: 20px;
+  }
+
+  .NoGenre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffd2 !important;
+    font-size: larger;
+    padding-top: 50px;
+  }
+
+  .GenreBadge{
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 4px; /* 아래쪽 간격을 늘립니다 */
+    margin-top: 4px; /* 위쪽 간격을 늘립니다 */
+    
+
+    font-size: 11px !important; /* 원하는 크기로 조절하세요 */
+    padding: 5px 9px !important; 
+
+  }
+
+  @media (max-width: 720px){
+    .MovieGenreContainer{
+        padding-top: 5px;
+        margin-left: 20px;
+    }
+
+  }
+
+  .spinner-area {
+    display: flex!important; 
+    justify-content: center!important; 
+    align-items: center!important; 
+    height: 100vh!important; 
+    
+  }
+  .alert-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

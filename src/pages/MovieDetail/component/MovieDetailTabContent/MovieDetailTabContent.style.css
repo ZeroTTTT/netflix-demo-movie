@@ -1,0 +1,59 @@
+.movie-detail-tab-wrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem 16px;
+    position: relative;  
+}
+.movie-detail-tab-list{
+    width:100%;
+    display: flex; 
+    border-bottom:1px solid #aaa;
+    padding:1rem 0;
+    margin:0 0 2rem;
+    gap:1rem;
+    position: relative;
+}
+.movie-detail-tab-list .tab-line{
+    height: 2px;
+    background-color: rgb(220, 53, 69);
+    position: absolute;
+    bottom:-1px;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+.movie-detail-tab-list .tab-button{
+    background:none;
+    border:none;
+    color:#666;
+    padding:0;
+    font-size: 5vw;
+}
+.movie-detail-tab-list .tab-button.active{
+    color:rgb(220, 53, 69);
+    font-weight: 700;
+    font-size:5.5vw;
+}
+.movie-detail-tab-list .tab-button span{
+    font-weight: 400;
+    font-size: 4vw;
+}
+@media (min-width:465px){
+    .movie-detail-tab-list .tab-button{
+        font-size: calc(1.3rem + .6vw);
+    }
+    .movie-detail-tab-list .tab-button.active{
+        font-size: calc(1.4rem + .6vw);
+    }
+    .movie-detail-tab-list .tab-button span{
+        font-weight: 400;
+        font-size: calc(1rem + .6vw);
+    }
+}
+@media (min-width:1025px){
+    .movie-detail-tab-wrap{
+        max-width: 1000px;
+        padding: 2rem 0;
+    } 
+ 
+}
