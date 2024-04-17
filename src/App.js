@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //추천 영화 /movies/:id/recommandation
 //리뷰 영화 /movies/:id/reviews              ===> /movies 를 쓰는게 많을때 라우트구성을 묶어줄수있다 ex path='movies'
 
-function App() {
+function App() { 
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
